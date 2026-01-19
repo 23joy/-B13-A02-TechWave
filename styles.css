@@ -6,12 +6,6 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
-
-header{
-    background-image: url(./assets/hero-bg.png);
-    background-size: cover;
-    height: 760px;
-}
 nav{
     display: flex;
     padding:20px;
@@ -47,22 +41,9 @@ nav h1{
     gap: 4px;
     align-items: center;
 }
+
 /* img-section */
- .img-section{
-    background-image: url(./assets/hero-circle.png); 
-    position: relative;
-    left: 50%;
-    background-repeat: no-repeat;
-
-
-}
-.banner-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+ 
 .banner-content h2{
     color: #FFFFFF;
     font-size: 60px;
@@ -105,6 +86,33 @@ nav h1{
     justify-content: center;
     gap: 8px;
  }
+ .banner-section{
+    background-image: url(./assets/hero-bg.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 760px;
+}
+ .banner{
+    max-width: 550px;
+    margin :0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+ }
+ .banner-img{
+    padding: 0 100px 40px 100px;
+ }
+ .banner-img img{
+    width: 200px;
+    padding: 69px 81px 75px 75px;
+    background-image: url(./assets/hero-circle.png) ;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
  .banner-content{
     display: flex;
     flex-direction: column;
@@ -112,7 +120,7 @@ nav h1{
     text-align: center;
     justify-content: center;
     gap: 8px;
- }
+ } 
  .About-section{
     background-color: #1A0B2E;
     height: 648px;
@@ -169,4 +177,201 @@ nav h1{
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
+}
+
+/* Choose-section */
+.Choose-section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.Choose-section{
+    background-color: #1A0B2E;
+    padding: 50px;
+    display: grid;
+    gap: 30px;
+    height: 1122px;
+}
+h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-1{
+    grid-area: box-1;
+}
+#box-2{
+    grid-area: box-2;
+}
+#box-3{
+    grid-area: box-3;
+}
+#box-4{
+    grid-area: box-4;
+}
+#box-5{
+    grid-area: box-5;
+}
+.box{
+    background-color: #230E3D;
+    padding: 40px;
+    border-radius: 40px;
+}
+.Choose-box{
+    max-width: 1200px;
+    height:783px;
+    margin: 0 auto;
+    display:grid; 
+    gap: 30px;
+    padding: 40px 200px 120px 200px;
+    overflow: hidden;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(150px);
+    grid-template-areas: 
+    "box-1 box-2 box-2"
+    "box-1 box-3 box-3"
+    "box-4 box-4 box-5"
+
+}
+.Choose-box .box  img{
+    width: 60px;
+
+}
+.Choose-box .box h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.Choose-box .box p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+/* Episode-Section */
+main{
+    background-color: #230E3D;
+    padding: 120px;
+}
+
+.Episodes-box{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.Episodes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    gap: 30px;
+}
+.Episode-content{
+    display: flex;
+    flex-direction: column;
+    gap:12px ;
+    padding: 24px;
+}
+.Episode-content h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.Episode-content p{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.Episode-content h4{
+    color: #00FF88;
+    display: flex;
+    gap:6px;
+}
+.Featured-Episodes-Section h2{
+    margin-bottom: 40px;
+}
+.Host-Section h2{
+    margin: 120px 200px 80px 200px;
+}
+.Host-Section{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.Host-container{
+    display: flex;
+    background-color: #1A0B2E;
+    padding: 40px;
+    border-radius: 40px;
+    gap: 16px;
+}
+.Host-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Host-content ul{
+    list-style: none;
+    display: flex;
+    gap:8px;
+}
+.Host-content li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #533c53;
+    border-radius:50%;
+    padding: 5px;
+}
+.Host-content h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.Host-content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/* footer */
+footer{
+
+    height: 412px;
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-container{
+    max-width: 1360px;
+    height: 172px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    gap: 32px;
+    padding: 120px;
+}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.footer-container ul li{
+    display: flex;
+    gap: 8px;
+    color: #FFFFFF;
+}
+.footer-container p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
