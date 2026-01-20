@@ -1,4 +1,17 @@
 @media screen and (max-width:576px){
+    .banner-section{
+        background-size: cover;
+    }
+    .banner{
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    }
     .About-content{
         width: 95%;
     }
@@ -74,18 +87,11 @@
     text-align: center;
 }
 footer{
-    height: 440px;
-    height:248px;
-    background-repeat: no-repeat;
-    background-size:100%;
+   background-size: cover;
 }
 .footer-container{
-    width: 400px;
-    height: 168px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-column: span2;
     gap: 24px;
-}
+ }
 }
