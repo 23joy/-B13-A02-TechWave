@@ -13,6 +13,11 @@ nav{
     align-items: center;
     background-color: #1A0B2E;
 }
+nav .clor{
+   background: linear-gradient(rgba(145,0,248,1),rgba(251,9,180,1),rgba(247,233,63,1));  
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -93,17 +98,14 @@ nav h1{
     height: 760px;
 }
  .banner{
-    max-width: 550px;
-    margin :0 auto;
+    width: 550px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 8px;
- }
- .banner-img{
-    padding: 0 100px 40px 100px;
+    gap: 40px;
  }
  .banner-img img{
     width: 200px;
@@ -119,19 +121,19 @@ nav h1{
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 8px;
+    gap: 28px;
  } 
  .About-section{
     background-color: #1A0B2E;
-    height: 648px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 80px;
+    padding: 50px 120px 200px 200px;
  }
  .About-content{
-    max-width: 1200px;
-    margin: 0 auto;
+    width:1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,8 +157,7 @@ nav h1{
     margin: 80px 200px;
  }
 .About-popular{
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1200px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -180,10 +181,11 @@ nav h1{
 }
 
 /* Choose-section */
-.Choose-section h2{
+.heading h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     font-size: 48px;
@@ -192,10 +194,9 @@ nav h1{
 }
 .Choose-section{
     background-color: #1A0B2E;
-    padding: 50px;
+    padding:40px 20px;
     display: grid;
     gap: 30px;
-    height: 1122px;
 }
 h2{
     color: #FFFFFF;
@@ -227,13 +228,11 @@ h2{
     border-radius: 40px;
 }
 .Choose-box{
-    max-width: 1200px;
-    height:783px;
-    margin: 0 auto;
+    width: 1200px;
     display:grid; 
     gap: 30px;
     padding: 40px 200px 120px 200px;
-    overflow: hidden;
+
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(150px);
     grid-template-areas: 
@@ -266,12 +265,14 @@ main{
 }
 
 .Episodes-box{
+    background-color:#530ead;
+    border-radius:10px;
     width: 380px;
     display: flex;
     flex-direction: column;
 }
 .Episodes{
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     display:flex;
     gap: 30px;
@@ -295,12 +296,6 @@ main{
     color: #00FF88;
     display: flex;
     gap:6px;
-}
-.Featured-Episodes-Section h2{
-    margin-bottom: 40px;
-}
-.Host-Section h2{
-    margin: 120px 200px 80px 200px;
 }
 .Host-Section{
     max-width:1200px;
@@ -342,15 +337,13 @@ main{
 }
 /* footer */
 footer{
-
-    height: 412px;
+    height:412px;
     background-image: url(./assets/footer-bg.png);
+    background-size:100%;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 .footer-container{
     max-width: 1360px;
-    height: 172px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -358,7 +351,8 @@ footer{
     align-items: center;
     text-align:center;
     gap: 32px;
-    padding: 120px;
+    padding-top: 120px;
+     
 }
 .footer-container ul{
     list-style: none;
@@ -366,6 +360,8 @@ footer{
     gap: 40px;
 }
 .footer-container ul li{
+    font-size: 16px;
+    font-weight: 600;
     display: flex;
     gap: 8px;
     color: #FFFFFF;
@@ -374,4 +370,14 @@ footer{
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+}
+footer .color{
+    width: 410px;
+    height: 60px;
+    background: linear-gradient(rgba(145,0,248,1),rgba(251,9,180,1),rgba(247,233,63,1));  
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+}
+.hide{
+    display: none !important;
 }
